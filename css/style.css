@@ -1,0 +1,355 @@
+@font-face{
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans.ttf");
+}
+@font-face{
+    font-family: "Tinos-Regular";
+    src: url("../fonts/Tinos-Regular.ttf");
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    margin: 0px 166px;
+}
+.header {
+    background: url("../img/bg.jpg") no-repeat center top;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header-line {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item {
+    color: #ec4a62;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 25px;
+    transition: color 0.3s linear;
+}
+.nav-item:hover {
+    color: #f79cb6;
+    text-decoration: none;
+}
+
+
+
+.cart {
+    position: relative;
+
+    border-right: 2px solid #ec4a62;
+    padding-right: 10px;
+    height: 50px;
+}
+.cart-img {
+    position: absolute;
+    top: 18px;
+    right: 7px;
+}
+.num {
+    color: #ec4a62;
+    font-weight: 700;
+    font-size: 16.9px;
+    margin-left: 7px;
+
+    transition: color 0.3s linear;
+}
+.num:hover {
+    color: #f79cb6;
+    text-decoration: none;
+}
+.phone-holder {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-down {
+    position: relative;
+}
+.header-title {
+    color: #ec4a62;
+    font-family: 'Tinos', serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    margin-top: 222px;
+    margin-bottom: 12px;
+}
+.header-button {
+    background-color: #e66a8d;
+    padding: 14px 28px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+
+    transition: background-color 0.1s linear;
+}
+.header-button:hover {
+    background-color: #c03b61;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+.cards-holder {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -80px;
+    padding: 10px 10px;
+}
+.card-image {
+    display: grid;
+    justify-content: center;
+    padding-top: 31px;
+}
+.card-title {
+     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+
+}
+.card-title span {
+    color: #ce4459;
+    margin-left: 2px;
+}
+.card-desc {
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #585858;
+}
+
+
+
+.about{
+	position:relative;
+	padding:120px 0px;
+}
+.text{
+	position:relative;
+	color:#3b3a3a;
+	font-size:19.5px;
+    font-family: 'Open Sans', sans-serif;
+	line-height:2em;
+	margin-bottom:40px;
+}
+.inner-column{
+	position:relative;
+	padding:40px 40px 0px 0px;
+	margin-left:50px;
+}
+.image-column .inner-column:after{
+	position:absolute;
+	content:'';
+	right:0px;
+	top:0px;
+	left:40px;
+	bottom:100px;
+	z-index:-1;
+	border:2px solid #d3465b;
+}
+.image img{
+	position:relative;
+	width:100%;
+	display:block;
+}
+.title {
+    position: relative;
+    color: #e8596e;
+    font-size: 30px;
+    font-family: 'Tinos';
+    font-weight: 700;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+
+
+.block {
+    background-color: #FAD3DC;
+    opacity: 80%;
+    padding: 50px;
+}
+.left-title {
+    color: #e36578;
+    font-family: 'Tinos', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.right-btn {
+    background-color: #db5569;
+    color: #fff;
+    font-family: 'Georgia';
+    padding: 20px 50px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.right-btn:hover {
+    background-color: #c3475b;
+    color: #ffffff;
+    text-decoration: none;
+}
+.block-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    width: calc(min(90rem, 90%));
+    margin-inline: auto;
+}
+section p {
+    line-height: 1.6;
+    color: #bf6969;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+ section h2 {
+    font-size: 59px;
+    font-family: 'Tinos';
+    color: #d3465b;
+}
+section .cards {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    gap: 8rem;
+}
+section .cards .card-content {
+    color: #80444e;
+}
+ @media screen {
+    section .cards .card:nth-child(2) {
+      transform: translatey(15%);
+ }
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #FAD3DC;
+}
+.footerContainer{
+    width: 100%;
+    padding: 20px 30px 10px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #dd4f65;
+    opacity: 0,9;
+}
+.socialIcons a:hover{
+    background-color: #eca4af;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:#d44157;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #FAD3DC;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #d3465b;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
